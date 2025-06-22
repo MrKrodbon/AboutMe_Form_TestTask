@@ -1,0 +1,107 @@
+@use "@app/styles/mixins.scss" as mixins;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pageHeroTop {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #1c1d20;
+  padding-right: 64px;
+  padding-left: 64px;
+  height: 457px;
+  width: 343px;
+}
+
+.image {
+  width: 343px;
+  height: 100%;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.image img {
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #1c1d20;
+  width: 100%;
+  padding: 16px;
+}
+
+.text {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+.list {
+  padding-left: 16px;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+.open {
+  max-height: 100%;
+  opacity: 1;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+.title {
+  @include mixins.title;
+}
+
+.titleLight {
+  @include mixins.title;
+  color: white;
+}
+
+.text {
+  @include mixins.subtitle;
+}
+
+.list {
+  @include mixins.subtitle;
+  list-style: decimal;
+}
+
+@media (width >= 768px) {
+  .pageHero {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+@media (width >=1280px) {
+  .pageHeroTop {
+    width: 700px;
+  }
+}

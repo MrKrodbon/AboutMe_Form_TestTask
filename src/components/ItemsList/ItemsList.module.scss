@@ -1,0 +1,30 @@
+@use '@app/styles/mixins.scss' as mixins;
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--main-color);
+  width: 320px;
+  height: 150px;
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.title {
+  text-align: center;
+  @include mixins.title;
+  color: var(--color-white);
+}

@@ -1,0 +1,39 @@
+@use '@app/styles/mixins.scss' as mixins;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  color: white;
+  width: 320px;
+  background-color: #1c1d20;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  @include mixins.secondaryButton;
+  transition: background-color, color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.errorMessage{
+  color: red;
+}
+
+.button:hover {
+  background-color: orange;
+  color: white;
+}
+
+@media (width >= 768px){
+    .wrapper{
+        width: 700px;
+    }
+}

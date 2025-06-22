@@ -1,0 +1,32 @@
+@mixin title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(#fafafa, 0.4);
+}
+
+@mixin subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@mixin base-button {
+  width: 100%;
+  min-height: 70px;
+}
+
+@mixin primaryButton {
+  height: 70px;
+  background: var(--primary-color);
+  border: none;
+}
+
+@mixin secondaryButton {
+  background-color: white;
+  border: none;
+  color: black;
+  border:none
+}

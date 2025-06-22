@@ -1,0 +1,16 @@
+@use '@app/styles/mixins.scss' as mixins;
+@import "@app/styles/veriables.css";
+
+.wrapper {
+  margin: 20px 0;
+}
+
+.button {
+  @include mixins.primaryButton;
+  transition: background-color, color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover{
+  background-color: white;
+    color: black;
+}

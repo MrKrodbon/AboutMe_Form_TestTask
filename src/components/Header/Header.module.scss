@@ -1,0 +1,27 @@
+@use '@app/styles/mixins.scss' as mixins;
+@import '@app/styles/veriables.css';
+
+.wrapper {
+  width: 100%;
+  background: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.navigation {
+  @include mixins.title;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  color: white;
+}
+
+.title {
+  width: 100%;
+  height: 412px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
