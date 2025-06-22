@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: white;
+  color: var(--white-color);
   width: 100%;
   padding: 0 16px;
 }
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .pageHero {
@@ -20,13 +21,14 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin-bottom: 20px;
 }
 
 .pageHeroTop {
   display: flex;
   align-items: center;
   border-radius: 16px;
-  background-color: #1c1d20;
+  background-color: var(--hover-text-color);
   padding-right: 64px;
   padding-left: 64px;
   height: 457px;
@@ -35,23 +37,23 @@
 
 .image {
   width: 343px;
-  height: 100%;
   border-radius: 16px;
-  margin-bottom: 12px;
 }
 
 .image img {
   object-fit: contain;
   border-radius: 16px;
+  height: 457px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background-color: #1c1d20;
+  background-color: var(--hover-text-color);
   width: 100%;
   padding: 16px;
+  border-radius: 16px;
 }
 
 .text {
@@ -80,7 +82,7 @@
 
 .titleLight {
   @include mixins.title;
-  color: white;
+  color: var(--white-color);
 }
 
 .text {
@@ -98,6 +100,7 @@
     justify-content: center;
     gap: 12px;
   }
+
 }
 
 @media (width >=1280px) {

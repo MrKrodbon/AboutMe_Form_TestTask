@@ -1,5 +1,7 @@
 :root {
   --white-color: #fff;
-  --main-color: linear-gradient(to right, #1c1d20, #ac5300, #ff7f08, #ff7f08);
-  --primary-color: #ff7f08;
+  --main-color: linear-gradient(to right, #1c1d20, #001958, #0041e8);
+  --primary-color: #0041e8;
+  --hover-text-color: #1c1d20;
+  --error-color: red;
 }

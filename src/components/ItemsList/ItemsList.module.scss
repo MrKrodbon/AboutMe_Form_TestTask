@@ -26,5 +26,5 @@
 .title {
   text-align: center;
   @include mixins.title;
-  color: var(--color-white);
+  color: var(--white-color);
 }

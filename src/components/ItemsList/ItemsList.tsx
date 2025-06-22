@@ -7,7 +7,6 @@ const PostsItems = React.lazy(() => import("./PostsItems/PostsItems"));
 interface ItemsListProps {
   itemsList: PostItem[];
 }
-
 const ItemsList = forwardRef<HTMLLIElement, ItemsListProps>(
   ({ itemsList }, ref) => {
     return (

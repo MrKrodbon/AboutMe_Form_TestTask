@@ -1,4 +1,4 @@
-@use '@app/styles/mixins.scss' as mixins;
+@use "@app/styles/mixins.scss" as mixins;
 
 .wrapper {
   display: flex;
@@ -12,28 +12,28 @@
   margin-bottom: 20px;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .button {
-  @include mixins.secondaryButton;
+  @include mixins.primaryButton;
   transition: background-color, color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.errorMessage{
-  color: red;
-}
-
 .button:hover {
-  background-color: orange;
-  color: white;
+  background-color: var(--white-color);
+  color: var(--hover-text-color);
 }
 
-@media (width >= 768px){
-    .wrapper{
-        width: 700px;
-    }
+.errorMessage {
+  color: var(--error-color);
+}
+
+@media (width >= 768px) {
+  .wrapper {
+    width: 700px;
+  }
 }
