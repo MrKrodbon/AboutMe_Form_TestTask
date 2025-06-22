@@ -6,7 +6,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HashRouter basename="/AboutMe_Form_TestTask/">
+    <HashRouter basename="AboutMe_Form_TestTask/">
       <App />
     </HashRouter>
   </StrictMode>
