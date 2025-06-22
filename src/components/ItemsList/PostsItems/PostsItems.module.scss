@@ -37,7 +37,7 @@
 }
 
 .modal .title {
-  @include mixins.title;
+  @include mixins.subtitle;
   color: var(--hover-text-color);
 }
 
