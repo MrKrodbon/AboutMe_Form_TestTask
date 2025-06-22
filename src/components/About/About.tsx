@@ -23,7 +23,7 @@ const About = () => {
           </div>
           <div className={s.pageHeroBottom}>
             <div className={s.image}>
-              <img src="/src/assets/images/my-photo.png" alt="my photo" />
+              <img src="images/my-photo.png" alt="my photo" />
             </div>
           </div>
         </section>
