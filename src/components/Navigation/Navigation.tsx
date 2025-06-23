@@ -8,13 +8,13 @@ const Navigation = () => {
         to={"/"}
         className={({ isActive }) => (isActive ? s.active : "")}
       >
-        Home
+        Головна
       </NavLink>
       <NavLink
         to={"/submit"}
         className={({ isActive }) => (isActive ? s.active : "")}
       >
-        Submit Form
+        Перегляд статей
       </NavLink>
     </>
   );

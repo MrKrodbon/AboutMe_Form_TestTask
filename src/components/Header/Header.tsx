@@ -8,7 +8,7 @@ const Header = () => {
         <Navigation />
       </div>
       <div className={s.title}>
-        <h1 className="pr-4 pl-4">Привіт! Я Frontenend developer Євгеній</h1>
+        <h1 className="pr-4 pl-4">Привіт! Я Євгеній — Frontend-розробник.</h1>
       </div>
     </div>
   );

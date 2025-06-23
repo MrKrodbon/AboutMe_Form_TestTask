@@ -16,7 +16,6 @@ const PostsItems = forwardRef<HTMLLIElement, PostItem>(
     const handleCloseModal = () => {
       setModalIsOpen(false);
     };
-    console.log(modalIsOpen);
 
     return (
       <li className={s.item} ref={ref}>

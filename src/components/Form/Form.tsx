@@ -21,10 +21,10 @@ const Form = ({ handleAddItemInList }: FormProps) => {
   const onSubmitHandle = async (data: PostItem) => {
     const response = await addPosts(data);
     if (response.status === 201) {
-      toast.success(`Publication ${data.title}  successfully created!`);
+      toast.success(`Публікація ${data.title}  успішно створена!`);
       handleAddItemInList(data);
     } else {
-      toast.error("Problem with creation of publication");
+      toast.error("Помилка при створенні публікації");
     }
   };
 
@@ -38,7 +38,7 @@ const Form = ({ handleAddItemInList }: FormProps) => {
           <div>
             <input
               {...register("title", { required: true })}
-              placeholder="Title"
+              placeholder="Додати назву..."
               className="border-b border-white w-full mb-3"
             />
             {errors.title && (
@@ -49,7 +49,7 @@ const Form = ({ handleAddItemInList }: FormProps) => {
             <textarea
               {...register("body", { required: true })}
               rows={5}
-              placeholder="Body"
+              placeholder="Додати опис..."
               className="border-b border-white w-full mb-3"
             />
             {errors.body && (
@@ -62,7 +62,7 @@ const Form = ({ handleAddItemInList }: FormProps) => {
             type="submit"
             className={s.button}
             disabled={titleValue === undefined && bodyValue === undefined}
-            label="Submit"
+            label="Відправити"
           />
         </form>
       </div>

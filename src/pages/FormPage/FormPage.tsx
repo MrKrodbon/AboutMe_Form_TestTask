@@ -37,15 +37,15 @@ const FormPage = () => {
 
   return (
     <div className={s.page}>
-      <p className={s.title}>Add Post</p>
+      <p className={s.title}>Додати пост</p>
       <Form handleAddItemInList={handleAddItemInList} />
       <Suspense fallback={<Loader />}>
         <ItemsList itemsList={postList} ref={lastElement} />
+        <Pagination label="Дивитись ще" onClick={handleLoadMore} />
       </Suspense>
-      <Pagination label="Load more" onClick={handleLoadMore} />
       <Button
         className="fixed top-[90%] right-[20px]"
-        label="top"
+        label="Вгору"
         onClick={() => {
           scrollTo({ top: 0, behavior: "smooth" });
         }}
