@@ -21,29 +21,41 @@
 
 ## 📦 Встановлення
 
-bash
-git clone https://github.com/mrkrodbon/AboutMe_Form_TestTask.git
-cd AboutMe_Form_TestTask
-npm install
+ ```bash
+ git clone https://github.com/mrkrodbon/AboutMe_Form_TestTask.git
+ ```
+ 
+ ```bash
+ cd AboutMe_Form_TestTask
+ ``` 
+ 
+ ```bash
+ npm install
+ ```
+
+```bash
 npm run dev
+```
 
 ## 🌐 Деплой
 
 Проєкт задеплоєний на [GitHub Pages](https://mrkrodbon.github.io/AboutMe_Form_TestTask/)  
 Для повторного деплою:
 
-bash
-`npm run deploy`
+```bash
+npm run deploy
+```
 
 ## 📁 Структура
 
-`src/
-├── api/ // Axios інстанс 
-├── components/ // Усі повторно використовувані компоненти 
-├── hooks/ // Кастомні хуки 
-├── pages/ // Основні сторінки 
-├── styles/ // SCSS змінні, міксіни 
-└── types/ // Типи TypeScript` 
+`src/` — 
+- `api/` (Axios інстанс), 
+- `components/` (повторно використовувані компоненти), 
+- `hooks/` (кастомні хуки), 
+- `pages/` (основні сторінки), 
+- `styles/` (SCSS змінні, міксіни), 
+- `types/` (TypeScript типи)
+
 
 ## 📃 License
 
