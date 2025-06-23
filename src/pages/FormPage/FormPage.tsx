@@ -22,13 +22,17 @@ const FormPage = () => {
   }, [initialPosts]);
 
   useEffect(() => {
-    if (currentPage > 1 && lastElement.current) {
-      lastElement.current.scrollIntoView({ behavior: "smooth" });
+    if (lastElement.current && currentPage > 1) {
+      const timer = setTimeout(() => {
+        lastElement.current?.scrollIntoView({ behavior: "smooth" });
+      }, 0);
+
+      return () => clearTimeout(timer);
     }
   }, [postList, currentPage]);
 
   const handleAddItemInList = (data: PostItem) => {
-    setPostList((prev) => [data, ...prev]);
+    setPostList((prev) => [...prev, data]);
   };
 
   const handleLoadMore = () => {
