@@ -25,7 +25,7 @@ const ItemsList = forwardRef<HTMLLIElement, ItemsListProps>(
         ) : (
           <li className={s.notFound}>
             <div className={s.itemWrapper}>
-              <p className={s.title}>We haven't found any posts</p>
+              <p className={s.title}>Нажаль, жодного посту не знайшли</p>
             </div>
           </li>
         )}
