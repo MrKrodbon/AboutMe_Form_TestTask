@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# AboutMe_Form_TestTask
 
-Currently, two official plugins are available:
+Цей проєкт — форма для створення постів із можливістю перегляду списку всіх доданих постів. Дані завантажуються посторінково з API. Реалізовано пагінацію, модальне вікно для перегляду деталей поста та плавне прокручування до нових елементів.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Технології
 
-## Expanding the ESLint configuration
+- **React** + TypeScript
+- **Vite** для збірки
+- **SCSS Modules** для стилізації
+- **Axios** для запитів
+- **React Modal** для модальних вікон
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Функціонал
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Додавання нових постів через форму
+- Виведення списку постів
+- Пагінація (`Load more`)
+- Перегляд кожного поста в модалці
+- Кнопка "Вгору" для зручної навігації
+
+## 📦 Встановлення
+
+ ```bash
+ git clone https://github.com/mrkrodbon/AboutMe_Form_TestTask.git
+ ```
+ 
+ ```bash
+ cd AboutMe_Form_TestTask
+ ``` 
+ 
+ ```bash
+ npm install
+ ```
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌐 Деплой
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Проєкт задеплоєний на [GitHub Pages](https://mrkrodbon.github.io/AboutMe_Form_TestTask/)  
+Для повторного деплою:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run deploy
 ```
+
+## 📁 Структура
+
+`src/` — 
+- `api/` (Axios інстанс), 
+- `components/` (повторно використовувані компоненти), 
+- `hooks/` (кастомні хуки), 
+- `pages/` (основні сторінки), 
+- `styles/` (SCSS змінні, міксіни), 
+- `types/` (TypeScript типи)
+
+
+## 📃 License
+
+Цей проєкт створено як тестове завдання. Вільно використовуйте для навчання чи демонстрації.
