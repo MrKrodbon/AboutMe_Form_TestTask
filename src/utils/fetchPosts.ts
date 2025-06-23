@@ -14,10 +14,6 @@ export const fetchPosts = async ({
     const params = new URLSearchParams();
     params.append("_limit", _limit.toString());
     params.append("_page", _page.toString());
-    console.log(_limit);
-
-    console.log(_page);
-
     const { data } = await axiosInstance.get("/posts", {
       params: {
         _limit,
