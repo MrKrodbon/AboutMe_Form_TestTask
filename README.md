@@ -21,7 +21,7 @@
 
 ## 📦 Встановлення
 
-```bash
+bash
 git clone https://github.com/mrkrodbon/AboutMe_Form_TestTask.git
 cd AboutMe_Form_TestTask
 npm install
